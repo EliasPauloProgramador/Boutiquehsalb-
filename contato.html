@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Suporte - Boutique HSALB | Atendimento ao Cliente</title>
+    
+    <meta name="description" content="Entre em contato com a Boutique HSALB. Dúvidas, reclamações, sugestões ou acompanhamento de pedido. Estamos aqui para ajudar!">
+    <meta name="keywords" content="suporte boutique hsalb, contato zango 3, atendimento luanda">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Suporte - Boutique HSALB">
+    <meta property="og:description" content="Fale conosco pelo WhatsApp ou formulário">
+    <link rel="canonical" href="https://boutique-hsalb.vercel.app/contato.html">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <img src="images/logo/logo.png" alt="Boutique HSALB - Moda e Beleza" style="height: 45px; width: auto;">
+                <div style="display: flex; flex-direction: column; line-height: 1.2;">
+                    <span style="font-family: 'Playfair Display', serif; font-size: 0.75rem; color: #666666; letter-spacing: 1px;">BOUTIQUE</span>
+                    <span style="font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: bold; color: #D4AF37; letter-spacing: 1.5px;">HSALB</span>
+                </div>
+            </a>
+        </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html" class="active">Suporte</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-btn" id="cartBtn">
+                    <span class="cart-icon">🛍️</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="menu-mobile-btn" id="menuMobileBtn">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Suporte ao Cliente</h1>
+                <p>Estamos aqui para ajudar você</p>
+            </div>
+        </section>
+
+        <section class="contato-section">
+            <div class="container">
+                <div class="contato-grid">
+                    <div class="contato-formulario">
+                        <h2>Envie sua Mensagem</h2>
+                        <p>Dúvidas, reclamações, sugestões ou acompanhamento de pedido. Responderemos em até 24h.</p>
+                        
+                        <form id="contatoForm">
+                            <div class="form-group">
+                                <label>Motivo do Contato *</label>
+                                <select id="motivo" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="duvida">Dúvida sobre produto</option>
+                                    <option value="reclamacao">Reclamação</option>
+                                    <option value="sugestao">Sugestão</option>
+                                    <option value="pedido">Acompanhar pedido</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Nome Completo *</label>
+                                    <input type="text" id="nome" required placeholder="Seu nome">
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefone *</label>
+                                    <input type="tel" id="telefone" required placeholder="+244 941 299 293">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" id="email" placeholder="seu@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Número do Pedido (se aplicável)</label>
+                                <input type="text" id="numeroPedido" placeholder="Ex: HSALB-00123">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Mensagem *</label>
+                                <textarea id="mensagem" rows="5" required placeholder="Descreva sua dúvida, reclamação ou sugestão..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-dourado btn-grande">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contato-info">
+                        <h2>Fale Conosco</h2>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <ion-icon name="logo-whatsapp"></ion-icon>
+                            </div>
+                            <div class="info-texto">
+                                <h3>WhatsApp</h3>
+                                <p><a href="https://wa.me/244941299293">+244 941 299 293</a></p>
+                                <small>Resposta rápida em horário comercial</small>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </div>
+                            <div class="info-texto">
+                                <h3>Telefone</h3>
+                                <p><a href="tel:+244941299293">+244 941 299 293</a></p>
+                                <small>Segunda a Sexta: 8h-22h | Sábado: 9h-18h</small>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            <div class="info-texto">
+                                <h3>Email</h3>
+                                <p><a href="mailto:suporte@boutiquehsalb.com">suporte@boutiquehsalb.com</a></p>
+                                <p><a href="mailto:contato@boutiquehsalb.com">contato@boutiquehsalb.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <ion-icon name="location-outline"></ion-icon>
+                            </div>
+                            <div class="info-texto">
+                                <h3>Endereço</h3>
+                                <p>Zango 3, Icolo e Bengo</p>
+                                <p>Luanda - Angola</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-contato">
+                            <h3>Redes Sociais</h3>
+                            <div class="social-icons">
+                                <a href="https://instagram.com/boutiquehsalb" target="_blank"><ion-icon name="logo-instagram"></ion-icon> Instagram</a>
+                                <a href="https://facebook.com/boutiquehsalb" target="_blank"><ion-icon name="logo-facebook"></ion-icon> Facebook</a>
+                                <a href="https://tiktok.com/@boutiquehsalb" target="_blank"><ion-icon name="logo-tiktok"></ion-icon> TikTok</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="faq-rapido">
+            <div class="container">
+                <h2>Perguntas Frequentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Como faço para comprar?</h3>
+                        <p>Escolha os produtos, adicione à sacola e finalize pelo WhatsApp. Enviamos as instruções de pagamento e entrega.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quais formas de pagamento?</h3>
+                        <p>Aceitamos Pix, transferência bancária e dinheiro na entrega (para Luanda).</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Fazem entregas em toda Angola?</h3>
+                        <p>Entregamos em Luanda, Icolo e Bengo e também enviamos para outras províncias via transporte.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Qual o prazo de entrega?</h3>
+                        <p>Em Luanda: 1-3 dias úteis. Demais províncias: 5-10 dias úteis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo/logo.png" alt="Boutique HSALB">
+                        <h3>BOUTIQUE <strong>HSALB</strong></h3>
+                    </div>
+                    <p>Moda masculina, feminina, sapatos, tênis, cosméticos, perfumes e cuidados para pele. A número 1 em Icolo e Bengo e Luanda.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Suporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="contato-info">
+                        <li><ion-icon name="location-outline"></ion-icon> Zango 3, Icolo e Bengo - Luanda</li>
+                        <li><ion-icon name="call-outline"></ion-icon> <a href="tel:+244941299293">+244 941 299 293</a></li>
+                        <li><ion-icon name="logo-whatsapp"></ion-icon> <a href="https://wa.me/244941299293">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/boutiquehsalb" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://facebook.com/boutiquehsalb" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://wa.me/244941299293" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a href="https://tiktok.com/@boutiquehsalb" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Boutique HSALB - Todos os direitos reservados</p>
+                <p>Zango 3, Icolo e Bengo | Luanda - Angola</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>🛍️ Minha Sacola</h3>
+            <button class="close-cart" id="closeCartBtn">×</button>
+        </div>
+        <div class="cart-items" id="cartItems"><div class="cart-empty">Sua sacola está vazia</div></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Total:</span><strong id="cartTotal">0 Kz</strong></div>
+            <button class="btn-whatsapp-checkout" id="checkoutWhatsAppBtn">Finalizar pelo WhatsApp</button>
+            <button class="btn-continue" id="continueShoppingBtn">Continuar Comprando</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sacola.js"></script>
+    <script src="js/produtos.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/contato.js"></script>
+</body>
+</html>

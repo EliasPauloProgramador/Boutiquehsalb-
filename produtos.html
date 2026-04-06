@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Produtos - Boutique HSALB | Moda, Sapatos, Tênis e Beleza</title>
+    
+    <meta name="description" content="Catálogo completo da Boutique HSALB. Moda masculina e feminina, sapatos sociais, tênis esportivos, cosméticos, perfumes e cuidados para pele. Qualidade e estilo no Zango 3, Luanda.">
+    <meta name="keywords" content="roupas angola, sapatos luanda, tênis angola, moda feminina, moda masculina, cosméticos, perfumes, boutique zango 3">
+    <meta name="author" content="Boutique HSALB">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Produtos - Boutique HSALB">
+    <meta property="og:description" content="Explore nosso catálogo completo de moda e beleza">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://boutique-hsalb.vercel.app/produtos.html">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <img src="images/logo/logo.png" alt="Boutique HSALB - Moda e Beleza" style="height: 45px; width: auto;">
+                <div style="display: flex; flex-direction: column; line-height: 1.2;">
+                    <span style="font-family: 'Playfair Display', serif; font-size: 0.75rem; color: #666666; letter-spacing: 1px;">BOUTIQUE</span>
+                    <span style="font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: bold; color: #D4AF37; letter-spacing: 1.5px;">HSALB</span>
+                </div>
+            </a>
+        </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html" class="active">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Suporte</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-btn" id="cartBtn">
+                    <span class="cart-icon">🛍️</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="menu-mobile-btn" id="menuMobileBtn">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="products-main">
+        <div class="container">
+            <div class="products-layout">
+                <aside class="filters-sidebar">
+                    <h3>Filtrar por</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Categorias</h4>
+                        <div class="filter-options" id="filterCategorias">
+                            <label><input type="radio" name="categoria" value="todos" checked> Todos</label>
+                            <label><input type="radio" name="categoria" value="masculino"> Moda Masculina</label>
+                            <label><input type="radio" name="categoria" value="feminino"> Moda Feminina</label>
+                            <label><input type="radio" name="categoria" value="sapatos"> Sapatos Sociais</label>
+                            <label><input type="radio" name="categoria" value="tenis"> Tênis Esportivos</label>
+                            <label><input type="radio" name="categoria" value="cosmeticos"> Cosméticos</label>
+                            <label><input type="radio" name="categoria" value="perfumes"> Perfumes</label>
+                            <label><input type="radio" name="categoria" value="cuidados"> Cuidados para Pele</label>
+                            <label><input type="radio" name="categoria" value="acessorios"> Acessórios</label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Faixa de Preço (Kz)</h4>
+                        <div class="filter-options" id="filterPreco">
+                            <label><input type="radio" name="preco" value="todos" checked> Todos</label>
+                            <label><input type="radio" name="preco" value="0-10000"> Até 10.000 Kz</label>
+                            <label><input type="radio" name="preco" value="10000-25000"> 10.000 - 25.000 Kz</label>
+                            <label><input type="radio" name="preco" value="25000-50000"> 25.000 - 50.000 Kz</label>
+                            <label><input type="radio" name="preco" value="50000+"> Acima de 50.000 Kz</label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Tamanhos</h4>
+                        <div class="filter-options filter-tamanhos" id="filterTamanhos">
+                            <label><input type="checkbox" value="PP"> PP</label>
+                            <label><input type="checkbox" value="P"> P</label>
+                            <label><input type="checkbox" value="M"> M</label>
+                            <label><input type="checkbox" value="G"> G</label>
+                            <label><input type="checkbox" value="GG"> GG</label>
+                            <label><input type="checkbox" value="35"> 35</label>
+                            <label><input type="checkbox" value="36"> 36</label>
+                            <label><input type="checkbox" value="37"> 37</label>
+                            <label><input type="checkbox" value="38"> 38</label>
+                            <label><input type="checkbox" value="39"> 39</label>
+                            <label><input type="checkbox" value="40"> 40</label>
+                            <label><input type="checkbox" value="41"> 41</label>
+                            <label><input type="checkbox" value="42"> 42</label>
+                            <label><input type="checkbox" value="43"> 43</label>
+                            <label><input type="checkbox" value="44"> 44</label>
+                            <label><input type="checkbox" value="Único"> Único</label>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-limpar-filtros" id="limparFiltrosBtn">Limpar Filtros</button>
+                </aside>
+                
+                <div class="products-content">
+                    <div class="products-header">
+                        <h1>Nosso Catálogo</h1>
+                        <div class="products-count" id="productsCount">Carregando...</div>
+                        <select id="ordenarProdutos" class="ordenar-select">
+                            <option value="relevancia">Ordenar por: Relevância</option>
+                            <option value="menor-preco">Menor Preço</option>
+                            <option value="maior-preco">Maior Preço</option>
+                        </select>
+                    </div>
+                    
+                    <div class="products-grid" id="productsGrid">
+                        <div class="loading-spinner">Carregando produtos...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- MODAL VISUALIZAÇÃO RÁPIDA -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="fecharModalGlobal()">✕</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Conteúdo carregado via JS -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo/logo.png" alt="Boutique HSALB">
+                        <h3>BOUTIQUE <strong>HSALB</strong></h3>
+                    </div>
+                    <p>Moda masculina, feminina, sapatos, tênis, cosméticos, perfumes e cuidados para pele. A número 1 em Icolo e Bengo e Luanda.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Suporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="contato-info">
+                        <li><ion-icon name="location-outline"></ion-icon> Zango 3, Icolo e Bengo - Luanda</li>
+                        <li><ion-icon name="call-outline"></ion-icon> <a href="tel:+244941299293">+244 941 299 293</a></li>
+                        <li><ion-icon name="logo-whatsapp"></ion-icon> <a href="https://wa.me/244941299293">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/boutiquehsalb" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://facebook.com/boutiquehsalb" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://wa.me/244941299293" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a href="https://tiktok.com/@boutiquehsalb" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Boutique HSALB - Todos os direitos reservados. Loja desenvolvida pela <strong style="color:#D4AF37">Web Company</strong></p>
+                <p>Zango 3, Icolo e Bengo | Luanda - Angola</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>🛍️ Minha Sacola</h3>
+            <button class="close-cart" id="closeCartBtn">×</button>
+        </div>
+        <div class="cart-items" id="cartItems"><div class="cart-empty">Sua sacola está vazia</div></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Total:</span><strong id="cartTotal">0 Kz</strong></div>
+            <button class="btn-whatsapp-checkout" id="checkoutWhatsAppBtn">Finalizar pelo WhatsApp</button>
+            <button class="btn-continue" id="continueShoppingBtn">Continuar Comprando</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sacola.js"></script>
+    <script src="js/produtos.js"></script>
+    <script src="js/whatsapp.js"></script>
+</body>
+</html>
